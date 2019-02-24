@@ -1,7 +1,7 @@
 var time = 0;
 
 function circ_x(time){
-    var x = windowWidth/2 - (windowWidth/2.5)*Math.cos(time);
+    var x = windowWidth/2 - (windowWidth/2.25)*Math.cos(time);
     return x;
 }
 
@@ -34,7 +34,7 @@ function draw() {
         text('JOIN THE ORBIT', windowWidth/2, windowHeight/2);
         fill(0, 225, 225);
         circle(circ_x(time), circ_y(time), windowWidth/45);
-        time = time + 0.015;
+        time = time + 0.018;
     }
 
     else {      
